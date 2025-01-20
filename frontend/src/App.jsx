@@ -1,12 +1,10 @@
-import './App.css'
+import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <>
-    
-    </> 
-  )
-}
- 
+  const movieNumber = 1;
 
-export default App
+  return <></>;
+}
+
+export default App;
