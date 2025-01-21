@@ -5,15 +5,16 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">Movie App</Link>
+        <Link to="/">FlickList</Link>
       </div>
-      <div className="navbar-links"></div>
-      <Link to="/" className="nav-link">
-        Home
-      </Link>
-      <Link to="/favourites" className="nav-link">
-        Favourites
-      </Link>
+      <div className="navbar-links">
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+        <Link to="/favourites" className="nav-link">
+          Favourites
+        </Link>
+      </div>
     </nav>
   );
 }

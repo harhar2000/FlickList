@@ -1,31 +1,45 @@
 .navbar {
-  background-color: #000000;
+  background-color: #282848; /* Dark blue-grey background */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  position: sticky; /* Sticks to the top */
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1.8rem; /* Slightly larger brand text */
   font-weight: bold;
+  color: #ffffff; /* White text */
+  text-transform: uppercase; /* Optional: Makes text uppercase */
+  text-decoration: none; /* Removes underline for links */
+}
+
+.navbar-brand:hover {
+  color: #ff4757; /* Red highlight on hover */
 }
 
 .navbar-links {
-  display: flex;
-  gap: 2rem;
+  display: flex; /* Align links horizontally */
+  align-items: center; /* Vertically align items */
+  gap: 1.5rem; /* Space between links */
 }
 
 .nav-link {
   font-size: 1rem;
+  color: #ffffff; /* White text */
+  text-decoration: none; /* Removes underline */
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ff4757; /* Red background on hover */
+  color: #ffffff; /* Ensures text remains white */
 }
 
 @media (max-width: 768px) {
@@ -34,11 +48,12 @@
   }
 
   .navbar-brand {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .navbar-links {
-    gap: 1rem;
+    gap: 1rem; /* Reduce space between links on smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .nav-link {
